@@ -89,8 +89,8 @@ const Post = ({ stringified }) => {
 
   useEffect(() => {
     const gitalk = new Gitalk({
-      clientID: "0fcda34360aaf39ca2e8",
-      clientSecret: "27da1d2ea362b03d8ab9448af6a51e0fbaab2a4e",
+      clientID: "e04645190b0f2d1e4c41",
+      clientSecret: "3006818ee3097d7d47aaffbb24dc16a0bbeeda54",
       repo: "myportfolioappcomments",
       owner: "mani-tajaddini",
       admin: ["mani-tajaddini"],
