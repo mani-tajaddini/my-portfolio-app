@@ -12,11 +12,9 @@ import Head from "next/head";
 import RelatedPostCard from "../../../components/Blog/RelatedPostCard";
 import Footer from "../../../components/Footer";
 import Subscribe from "../../../components/Subscribe";
-import Link from "next/link";
 import DismissableAlert from "../../../components/DismissableAlert";
 import { parse, stringify } from "flatted";
 import RichText from "@madebyconnor/rich-text-to-jsx";
-import axios from "axios";
 import { useEffect } from "react";
 import Gitalk from "gitalk";
 
@@ -89,8 +87,8 @@ const Post = ({ stringified }) => {
 
   useEffect(() => {
     const gitalk = new Gitalk({
-      clientID: "e04645190b0f2d1e4c41",
-      clientSecret: "3006818ee3097d7d47aaffbb24dc16a0bbeeda54",
+      clientID: process.env.GITALKCLIENTID,
+      clientSecret: process.env.GITALKCLIENTSECRET,
       repo: "myportfolioappcomments",
       owner: "mani-tajaddini",
       admin: ["mani-tajaddini"],

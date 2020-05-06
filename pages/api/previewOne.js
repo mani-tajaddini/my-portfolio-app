@@ -1,10 +1,9 @@
 import { getPreviewPostBySlug } from "../../lib/api";
-import config from "../../config.json";
 
 export default async (req, res) => {
   // Check the secret and next parameters
   // This secret should only be known to this API route and the CMS
-  if (req.query.secret !== config.previewSecret || !req.query.slug) {
+  if (req.query.secret !== process.env.PREVIEWSECRET || !req.query.slug) {
     return res.status(401).json({ message: "Invalid token" });
   }
 

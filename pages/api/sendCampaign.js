@@ -1,5 +1,4 @@
 import Mailchimp from "mailchimp-api-v3";
-import config from "../../config.json";
 import { getImage, getSingleEntry } from "../../lib/api";
 import emailHtml from "../../lib/emailHtml";
 
@@ -13,7 +12,7 @@ const groupIDs = {
   food: "780ec22ad7"
 };
 
-const mailchimp = new Mailchimp(config.mailchimpApiKey);
+const mailchimp = new Mailchimp(process.env.MAILCHIMPAPIKEY);
 
 export default async (req, res) => {
   // testing with contentful there should be JSON.parse but testing with post man there shouln't be
