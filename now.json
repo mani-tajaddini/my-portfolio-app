@@ -1,0 +1,22 @@
+{
+  "env": {
+    "SPACE": "@space",
+    "ACCESSTOKEN": "@access_token",
+    "PREVIEWSECRET": "@preview_secret",
+    "PREVIEWTOKEN": "@preview_token",
+    "MAILCHIMPAPIKEY": "@mailchimp_api_key",
+    "GITALKCLIENTID": "@gitalk_client_id",
+    "GITALKCLIENTSECRET": "@gitalk_client_secret"
+  },
+  "build": {
+    "env": {
+      "SPACE": "@space",
+      "ACCESSTOKEN": "@access_token",
+      "PREVIEWSECRET": "@preview_secret",
+      "PREVIEWTOKEN": "@preview_token",
+      "MAILCHIMPAPIKEY": "@mailchimp_api_key",
+      "GITALKCLIENTID": "@gitalk_client_id",
+      "GITALKCLIENTSECRET": "@gitalk_client_secret"
+    }
+  }
+}

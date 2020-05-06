@@ -294,7 +294,6 @@ export const getStaticProps = async ({ params, preview = false }) => {
       allPosts.posts.findIndex(p => p.fields.title === post.fields.title) - 1
     ];
   const me = await getMyImage();
-
   // axios
   //   .get(
   //     "https://webmention.io/api/mentions.jf2?target=https://manitajaddini.com/blog/posts/testingmicroformats01&wm-property=in-reply-to"
